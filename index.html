@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joe's Fighting Ring - Coming Soon to Roblox!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 0 20px;
+    }
+    header, main, footer {
+      max-width: 1200px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background-color: #222;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+      position: relative;
+    }
+    
+    /* RGB Border */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border: 8px solid transparent;
+      border-radius: 20px;
+      background: linear-gradient(45deg, red, yellow, lime, aqua, blue, magenta, red);
+      background-size: 400% 400%;
+      animation: rainbow-border 10s ease infinite;
+      pointer-events: none;
+    }
+
+    /* RGB Border Animation */
+    @keyframes rainbow-border {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Heading Styles */
+    h1 {
+      font-size: 2.5rem;
+      color: #f9c74f;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #90be6d;
+    }
+
+    p, ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #f0f0f0;
+    }
+
+    /* Button Styles */
+    a.join-discord {
+      background-color: #7289da;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    a.join-discord:hover {
+      background-color: #5b6eae;
+    }
+
+    /* List Styles */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+      background: #333;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    /* Footer Styling */
+    footer p {
+      color: #f9c74f;
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #333;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #555;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f9c74f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Joe's Fighting Ring - Coming Soon to Roblox!</h1>
+    <p>Experience next-gen combat and destruction in an epic online arena!</p>
+  </header>
+
+  <main>
+    <!-- Join Discord Section -->
+    <section>
+      <h2>Join the Discord Community Now!</h2>
+      <p>Stay updated on game development, meet fellow fighters, and get exclusive sneak peeks!</p>
+      <p><a href="https://discord.gg/qvfh8mFSch" class="join-discord">Click here to join the community!</a></p>
+    </section>
+
+    <!-- Game Features -->
+    <section>
+      <h2>Core Gameplay Features</h2>
+      <ul>
+        <li><strong>Real-time Combat Mechanics:</strong> Fast-paced, fluid combat with dynamic physics and destruction!</li>
+        <li><strong>Combos & Special Moves:</strong> Execute powerful combos to outplay your opponents!</li>
+        <li><strong>Unique Characters:</strong> Choose from a roster of original fighters, each with unique abilities and fighting styles!</li>
+        <li><strong>Ranked Matches:</strong> Test your skills in ranked battles to climb the global leaderboard!</li>
+        <li><strong>Progression & Levels:</strong> Level up your fighter, unlock abilities, and become the ultimate champion!</li>
+        <li><strong>Customization:</strong> Customize your fighter's stats, appearance, and equipment to match your style!</li>
+        <li><strong>Physics-Driven Combat:</strong> Fight in destructible arenas with realistic physics and interactions!</li>
+        <li><strong>RTX Graphics:</strong> Experience breathtaking visuals with real-time ray tracing!</li>
+        <li><strong>POIs (Points of Interest):</strong> Battle in iconic locations, from mystical temples to modern cityscapes!</li>
+      </ul>
+    </section>
+
+    <!-- Character Customization -->
+    <section>
+      <h2>Character Customization</h2>
+      <p>At Joe's Fighting Ring, personalization is key! Create your dream fighter with:</p>
+      <ul>
+        <li>Custom outfits and skins (purchase exclusive cosmetics in the shop!)</li>
+        <li>Skill trees to enhance your fighter's abilities</li>
+        <li>Unique movesets that can be customized for different playstyles</li>
+        <li>Freedom to use your own Roblox skins!</li>
+      </ul>
+    </section>
+
+    <!-- In-Game Shop -->
+    <section>
+      <h2>The Shop</h2>
+      <p>Want to stand out in the arena? Visit the shop for:</p>
+      <ul>
+        <li>Exclusive skins and outfits (cosmetic items only!)</li>
+        <li>Unlockable emotes, taunts, and victory poses</li>
+        <li>Limited-time event items and seasonal gear</li>
+      </ul>
+    </section>
+
+    <!-- Boss Fights and NPCs -->
+    <section>
+      <h2>Boss Fights and NPCs</h2>
+      <p>Test your skills against powerful NPCs and epic bosses in single-player and co-op modes!</p>
+      <ul>
+        <li>Epic boss battles with unique mechanics</li>
+        <li>Challenge NPC fighters to hone your skills</li>
+        <li>Team up with friends to take down legendary bosses!</li>
+      </ul>
+    </section>
+
+    <!-- Game Modes -->
+    <section>
+      <h2>Game Modes</h2>
+      <p>Joe's Fighting Ring offers a variety of exciting game modes for all types of players:</p>
+      <ul>
+        <li><strong>Ranked Battles:</strong> Prove your worth in competitive ranked matches!</li>
+        <li><strong>Casual Fights:</strong> Jump in for fun, non-ranked battles with friends or AI!</li>
+        <li><strong>Survival Mode:</strong> Face endless waves of enemies and see how long you can last!</li>
+        <li><strong>Tournaments:</strong> Participate in seasonal tournaments to win exclusive rewards!</li>
+      </ul>
+    </section>
+
+    <!-- Points of Interest (POIs) -->
+    <section>
+      <h2>Battle Arenas (POIs)</h2>
+      <p>Fight in diverse, visually stunning arenas, each with its own unique design and challenges:</p>
+      <ul>
+        <li><strong>Ancient Temple:</strong> Engage in epic duels amidst ancient ruins and crumbling architecture.</li>
+        <li><strong>City Skyscraper:</strong> Battle on the rooftops of a bustling cityscape, with destructible environments!</li>
+        <li><strong>Space Station:</strong> Low gravity combat in the depths of space!</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Next-Gen Graphics & Destruction</h2>
+      <p>Powered by cutting-edge physics engines, Joe's Fighting Ring features realistic destruction and collision effects.</p>
+      <ul>
+        <li>Fully destructible environments with physics-driven interactions</li>
+        <li>Next-level visual fidelity with RTX ray tracing technology</li>
+        <li>Immersive sound design and dynamic lighting effects</li>
+      </ul>
+    </section>
+
+    <p>Stay tuned for more updates on our Roblox page. Follow us on <a href="https://discord.gg/qvfh8mFSch">Discord</a>!</p>
+  </footer>
+</body>
+</html>
